@@ -1,0 +1,13 @@
+{
+  "name": "study_plan",
+  "version": "1.0.0",
+  "description": "An AI-powered tool that generates a **custom study guide** for any topic — complete with key points, questions, flashcards, and a spaced repetition schedule to help you master anything efficiently.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
