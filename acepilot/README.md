@@ -35,23 +35,6 @@ An AI-powered tool that generates a **custom study guide** for any topic — com
 
 ---
 
-## 📥 Input
-
-```bash
-Topic: "Operating System"
-```
-
----
-
-## 📤 Output
-
-* **Key Points** – Well-structured topic breakdown
-* **Practice Questions** – Multiple formats (MCQ, short answer)
-* **Flashcards** – Q\&A for rapid recall
-* **Review Schedule** – Optimized for long-term retention using spaced repetition
-
----
-
 ## 🧪 API Endpoints
 
 * `POST /api/study-guide`
@@ -162,15 +145,6 @@ npm run dev
 ## 🧑‍💻 Contributing
 
 Feel free to fork this repo, open issues, or contribute pull requests! We welcome improvements in logic, UI, and learning models.
-
----
-
-## 🔐 Environment Variables
-
-```env
-OPENAI_API_KEY=your_openai_key
-MONGODB_URI=your_mongodb_uri
-```
 
 ---
 
