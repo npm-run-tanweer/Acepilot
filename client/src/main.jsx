@@ -3,7 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { ClerkProvider } from "@clerk/clerk-react";
-
+import {registerLicense} from "@syncfusion/ej2-base"
+registerLicense("Ngo9BigBOggjHTQXAR8/V1NBaF1cXmhPYVJzWmFzFVpgd19CaFZSRWYuP1ZhSXxXdkBiX39XcXZWQmdVVEI="
+)
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 

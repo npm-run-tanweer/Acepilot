@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --shadow-input:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+}
+
+*{
+  font-family: Inter;
+}
+
+@import "../node_modules/@syncfusion/ej2-diagrams/styles/material.css";
+
+ 
+.text-updater-node {
+  height: 50px;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+}
+ 
+.text-updater-node label {
+  display: block;
+  color: #777;
+  font-size: 12px;
+}

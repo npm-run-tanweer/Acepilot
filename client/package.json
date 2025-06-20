@@ -12,8 +12,15 @@
   "dependencies": {
     "@clerk/clerk-react": "^5.32.0",
     "@radix-ui/react-dropdown-menu": "^2.1.15",
+    "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tooltip": "^1.2.7",
+    "@splinetool/react-spline": "^4.0.0",
+    "@syncfusion/ej2-react-diagrams": "^29.2.8",
+    "@tabler/icons-react": "^3.34.0",
     "@tailwindcss/vite": "^4.1.10",
+    "@xyflow/react": "^12.7.0",
+    "axios": "^1.10.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.516.0",
@@ -22,8 +29,10 @@
     "react-dom": "^19.1.0",
     "react-router": "^7.6.2",
     "react-router-dom": "^7.6.2",
+    "reactflow": "^11.11.4",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
