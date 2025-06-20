@@ -15,7 +15,7 @@ export const generateStudyGuide = async (req, res) => {
           {
             role: "system",
             content:
-              "You are an AI educator assistant helping students learn complex topics in a structured and trackable format. Don't add any text or anything, ONLY GIVE JSON and GENERATE ONLY 30 nodes at first",
+              "You are an AI educator assistant helping students learn complex topics in a structured and trackable format. Don't add any text or anything, ONLY GIVE JSON and GENERATE AT MAX 30 nodes at first",
           },
           {
             role: "user",
@@ -46,6 +46,7 @@ export const generateStudyGuide = async (req, res) => {
             }
 
           ### Rules:
+          - Give the root node a "position": { x: 50, y: 200 }, ONLY TO THE ROOT NODE,
           - Always nest subtopics logically up to 3–5 levels deep.
           - Use simple, readable titles.
           - Each subtopic should be relevant to its parent.

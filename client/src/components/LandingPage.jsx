@@ -34,7 +34,7 @@ export default function LandingPage() {
             className="mt-8 z-20"
           >
             <SignedOut>
-              <SignInButton>
+              <SignInButton forceRedirectUrl={"/dashboard"}>
                 <Button className="px-6 py-3 text-lg rounded-xl shadow-md bg-blue-600 text-white dark:bg-gray-100 dark:text-black dark:hover:bg-blue-500 dark:hover:text-white cursor-pointer">
                   Try Acepilot
                 </Button>
@@ -43,7 +43,7 @@ export default function LandingPage() {
             <SignedIn>
               <Button
                 onClick={() => {
-                  navigate("/material");
+                  navigate("/dashboard");
                 }}
                 className="px-6 py-3 text-lg rounded-xl shadow-md bg-blue-600 text-white dark:bg-gray-100 dark:text-black dark:hover:bg-blue-500 dark:hover:text-white cursor-pointer"
               >
