@@ -67,7 +67,6 @@ export const generateStudyGuide = async (req, res) => {
     );
 
     const rawText = response.data.choices[0].message.content;
-    console.log(rawText)
     const cleanedJson = rawText.replace(/```json|```/g, "").trim();
     // Assuming the response is the raw JSON array — safely parse it
     let parsedMindMap;
@@ -76,7 +75,7 @@ export const generateStudyGuide = async (req, res) => {
     } catch (parseError) {
       console.error("JSON parsing error:", parseError.message);
       return res.status(500).json({ success: false, error: "Invalid JSON format in AI response." });
-    }
+    } 
 
     res.json({ success: true, data: { title: topic, nodes: parsedMindMap } });
   } catch (err) {

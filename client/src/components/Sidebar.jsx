@@ -33,7 +33,6 @@ import Dashboard from "./Dashboard";
 
 export function SidebarDemo() {
   const { user } = useUser();
-  console.log(user);
   const links = [
     {
       label: "Dashboard",

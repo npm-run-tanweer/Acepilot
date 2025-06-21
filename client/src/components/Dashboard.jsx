@@ -39,11 +39,17 @@ const loadingStates = [
 ];
 const fetchStudyGuide = async (topic, syllabus) => {
   try {
-    const response = await axios.post(`${BACKEND_URL}/api/study/generate`, {
-      topic,
-      syllabus,
-    });
-    return response.data.data; // title, sections, flashcards, questions
+    const response = await axios.post(
+      `${BACKEND_URL}/api/study/generate`,
+      { topic, syllabus },
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        withCredentials: true, // only if your backend needs it
+      }
+    );
+    console.log(response);
   } catch (error) {
     console.error("Error fetching study guide:", error);
     throw error;
