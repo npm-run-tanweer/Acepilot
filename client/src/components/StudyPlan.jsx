@@ -164,7 +164,7 @@ export default function StudyPlan() {
 
   return (
     <div className="h-screen flex">
-      <SidebarDemo />
+      <StudyPlan />
       <ReactFlowProvider>
         <ReactFlow
           nodes={enhancedNodes}

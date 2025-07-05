@@ -1,38 +1,41 @@
 export const baseNodes = [
   {
-    "id": "os-root",
-    "title": "Operating System",
-    "position": { x: 50, y: 200 },
+    "id": "dsa-root",
+    "title": "Data Structures and Algorithms",
     "data": {
-        "completed": false,
+        "completed": false
+    },
+    "position": {
+        "x": 50,
+        "y": 200
     },
     "children": [
         {
-            "id": "os-intro",
-            "title": "Introduction",
+            "id": "ds-intro",
+            "title": "Introduction to DSA",
             "data": {
                 "completed": false
             },
             "children": [
                 {
-                    "id": "os-intro-def",
-                    "title": "Definition and Purpose",
+                    "id": "ds-definition",
+                    "title": "What are Data Structures?",
                     "data": {
-                        "completed": false
+                        "completed": true
                     },
                     "children": []
                 },
                 {
-                    "id": "os-intro-history",
-                    "title": "History and Evolution",
+                    "id": "algo-definition",
+                    "title": "What are Algorithms?",
                     "data": {
-                        "completed": false
+                        "completed": true
                     },
                     "children": []
                 },
                 {
-                    "id": "os-intro-types",
-                    "title": "Types of Operating Systems",
+                    "id": "time-complexity",
+                    "title": "Time Complexity Basics",
                     "data": {
                         "completed": false
                     },
@@ -41,315 +44,262 @@ export const baseNodes = [
             ]
         },
         {
-            "id": "os-process",
-            "title": "Process Management",
+            "id": "linear-ds",
+            "title": "Linear Data Structures",
             "data": {
                 "completed": false
             },
             "children": [
                 {
-                    "id": "os-process-def",
-                    "title": "Process Definition",
+                    "id": "array",
+                    "title": "Arrays",
                     "data": {
                         "completed": false
                     },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "array-operations",
+                            "title": "Array Operations",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "dynamic-array",
+                            "title": "Dynamic Arrays",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 },
                 {
-                    "id": "os-process-states",
-                    "title": "Process States",
+                    "id": "linked-list",
+                    "title": "Linked Lists",
                     "data": {
                         "completed": false
                     },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "singly-linked",
+                            "title": "Singly Linked List",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "doubly-linked",
+                            "title": "Doubly Linked List",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 },
                 {
-                    "id": "os-process-scheduling",
-                    "title": "Process Scheduling",
+                    "id": "stack",
+                    "title": "Stacks",
                     "data": {
                         "completed": false
                     },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "stack-impl",
+                            "title": "Stack Implementation",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 },
                 {
-                    "id": "os-process-ops",
-                    "title": "Process Operations",
+                    "id": "queue",
+                    "title": "Queues",
                     "data": {
                         "completed": false
                     },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "queue-impl",
+                            "title": "Queue Implementation",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "priority-queue",
+                            "title": "Priority Queue",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 }
             ]
         },
         {
-            "id": "os-threads",
-            "title": "Threads",
+            "id": "non-linear-ds",
+            "title": "Non-Linear Data Structures",
             "data": {
                 "completed": false
             },
             "children": [
                 {
-                    "id": "os-threads-def",
-                    "title": "Thread Definition",
+                    "id": "tree",
+                    "title": "Trees",
                     "data": {
                         "completed": false
                     },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "binary-tree",
+                            "title": "Binary Trees",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "bst",
+                            "title": "Binary Search Trees",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "avl-tree",
+                            "title": "AVL Trees",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 },
                 {
-                    "id": "os-threads-types",
-                    "title": "Types of Threads",
+                    "id": "graph",
+                    "title": "Graphs",
                     "data": {
                         "completed": false
                     },
-                    "children": []
-                },
-                {
-                    "id": "os-threads-multithreading",
-                    "title": "Multithreading Models",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "graph-rep",
+                            "title": "Graph Representation",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "graph-traversal",
+                            "title": "Graph Traversal",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 }
             ]
         },
         {
-            "id": "os-cpu-scheduling",
-            "title": "CPU Scheduling",
+            "id": "algorithms",
+            "title": "Algorithms",
             "data": {
                 "completed": false
             },
             "children": [
                 {
-                    "id": "os-cpu-scheduling-basics",
-                    "title": "Scheduling Basics",
+                    "id": "sorting",
+                    "title": "Sorting Algorithms",
                     "data": {
                         "completed": false
                     },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "bubble-sort",
+                            "title": "Bubble Sort",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "merge-sort",
+                            "title": "Merge Sort",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "quick-sort",
+                            "title": "Quick Sort",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 },
                 {
-                    "id": "os-cpu-scheduling-algorithms",
-                    "title": "Scheduling Algorithms",
+                    "id": "searching",
+                    "title": "Searching Algorithms",
                     "data": {
                         "completed": false
                     },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "linear-search",
+                            "title": "Linear Search",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "binary-search",
+                            "title": "Binary Search",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 },
                 {
-                    "id": "os-cpu-scheduling-evaluation",
-                    "title": "Scheduling Algorithm Evaluation",
+                    "id": "dynamic-programming",
+                    "title": "Dynamic Programming",
                     "data": {
                         "completed": false
                     },
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": "os-memory",
-            "title": "Memory Management",
-            "data": {
-                "completed": false
-            },
-            "children": [
-                {
-                    "id": "os-memory-basics",
-                    "title": "Memory Basics",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-memory-partitioning",
-                    "title": "Memory Partitioning",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-memory-paging",
-                    "title": "Paging",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-memory-segmentation",
-                    "title": "Segmentation",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": "os-virtual-memory",
-            "title": "Virtual Memory",
-            "data": {
-                "completed": false
-            },
-            "children": [
-                {
-                    "id": "os-virtual-memory-basics",
-                    "title": "Virtual Memory Basics",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-virtual-memory-demand-paging",
-                    "title": "Demand Paging",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-virtual-memory-page-replacement",
-                    "title": "Page Replacement",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": "os-file-systems",
-            "title": "File Systems",
-            "data": {
-                "completed": false
-            },
-            "children": [
-                {
-                    "id": "os-file-systems-basics",
-                    "title": "File System Basics",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-file-systems-implementation",
-                    "title": "File System Implementation",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-file-systems-allocation",
-                    "title": "File Allocation Methods",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": "os-io-systems",
-            "title": "I/O Systems",
-            "data": {
-                "completed": false
-            },
-            "children": [
-                {
-                    "id": "os-io-systems-basics",
-                    "title": "I/O System Basics",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-io-systems-hardware",
-                    "title": "I/O Hardware",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-io-systems-software",
-                    "title": "I/O Software",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": "os-deadlocks",
-            "title": "Deadlocks",
-            "data": {
-                "completed": false
-            },
-            "children": [
-                {
-                    "id": "os-deadlocks-def",
-                    "title": "Deadlock Definition",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-deadlocks-conditions",
-                    "title": "Deadlock Conditions",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-deadlocks-handling",
-                    "title": "Deadlock Handling",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": "os-security",
-            "title": "Security & Protection",
-            "data": {
-                "completed": false
-            },
-            "children": [
-                {
-                    "id": "os-security-basics",
-                    "title": "Security Basics",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-security-mechanisms",
-                    "title": "Security Mechanisms",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
-                },
-                {
-                    "id": "os-protection",
-                    "title": "Protection Mechanisms",
-                    "data": {
-                        "completed": false
-                    },
-                    "children": []
+                    "children": [
+                        {
+                            "id": "memoization",
+                            "title": "Memoization",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        },
+                        {
+                            "id": "tabulation",
+                            "title": "Tabulation",
+                            "data": {
+                                "completed": false
+                            },
+                            "children": []
+                        }
+                    ]
                 }
             ]
         }

@@ -9,8 +9,10 @@ import { IconSquareRoundedX } from "@tabler/icons-react";
 import axios from "axios";
 import MindMap from "./StudyPlan";
 import { SidebarDemo } from "./Sidebar";
+import { useStudyPlan } from "../context/StudyPlanContext";
+import StudyPlan from "./StudyPlan";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL; // For Vite
+const BACKEND_URL = "http://localhost:5000"; // For Vite
 const loadingStates = [
   {
     text: "Opening the study vault",
@@ -49,7 +51,7 @@ const fetchStudyGuide = async (topic, syllabus) => {
         withCredentials: true, // only if your backend needs it
       }
     );
-    console.log(response);
+    return response.data.data.nodes.result;
   } catch (error) {
     console.error("Error fetching study guide:", error);
     throw error;
@@ -57,6 +59,7 @@ const fetchStudyGuide = async (topic, syllabus) => {
 };
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [topic, setTopic] = useState("");
   const [syllabus, setSyllabus] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -68,6 +71,7 @@ const Dashboard = () => {
     console.log(result);
     setData(result);
     setLoading(false);
+    navigate("/study");
     setTopic("");
     setSyllabus("");
   }
@@ -75,7 +79,7 @@ const Dashboard = () => {
     <div className="flex">
       <SidebarDemo />
       {data ? (
-        <MindMap data={data} />
+        <StudyPlan />
       ) : (
         <div className="relative flex w-full h-screen flex-1 flex-col gap-2 border border-neutral-200 bg-neutral-100 p-2 md:p-10 dark:border-neutral-700 dark:bg-neutral-900">
           <div className="absolute right-6 top-6">
