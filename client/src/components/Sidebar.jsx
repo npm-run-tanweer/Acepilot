@@ -32,7 +32,7 @@ import { Textarea } from "./ui/textarea";
 import Dashboard from "./Dashboard";
 
 export function SidebarDemo() {
-  const { user } = useUser();
+  const { isLoaded, isSignedIn, user } = useUser();
   console.log(user);
   const links = [
     {
@@ -72,6 +72,10 @@ export function SidebarDemo() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.25 } },
     exit: { opacity: 0, y: 10, transition: { duration: 0.2 } },
   };
+
+  if (!isLoaded) return <div>Loading...</div>;
+  if (!isSignedIn) return <div>Please sign in</div>;
+  
   return (
     <div
       className={cn(
@@ -79,6 +83,7 @@ export function SidebarDemo() {
         // for your use case, use `h-screen` instead of `h-[60vh]`
       )}
     >
+      
       <Sidebar open={open} setOpen={setOpen}>
         <SidebarBody className="justify-between gap-10">
           <div className="flex flex-1 flex-col overflow-x-hidden overflow-y-auto mx-auto">
