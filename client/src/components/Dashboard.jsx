@@ -121,7 +121,8 @@ const Dashboard = () => {
             {loading && (
               <button
                 className="fixed top-4 right-4 text-black dark:text-white z-[120]"
-                onClick={() => setLoading(false)}
+                // onClick={() => setLoading(false)}
+                onClick={navigate('/study')}
               >
                 <IconSquareRoundedX className="h-10 w-10" />
               </button>

@@ -73,9 +73,9 @@ export function SidebarDemo() {
     exit: { opacity: 0, y: 10, transition: { duration: 0.2 } },
   };
 
-  if (!isLoaded) return <div>Loading...</div>;
+  if (!isLoaded) return <div className="text-xs">Loading...</div>;
   if (!isSignedIn) return <div>Please sign in</div>;
-  
+
   return (
     <div
       className={cn(
